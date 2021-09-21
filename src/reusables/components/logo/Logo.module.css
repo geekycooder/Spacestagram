@@ -1,0 +1,15 @@
+.rocket {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0px, -3px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+}

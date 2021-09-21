@@ -1,0 +1,45 @@
+.toggle {
+  height: 25px;
+  width: 60px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.trLeft {
+  transform: translate(0, 0);
+}
+
+.trRight {
+  transform: translate(35px, 0);
+}
+
+.notch {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 576px) {
+  .toggle {
+    height: 20px;
+    width: 50px;
+  }
+
+  .notch {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    top: 4px;
+    left: 4px;
+  }
+
+  .trRight {
+    transform: translate(30px, 0);
+  }
+}

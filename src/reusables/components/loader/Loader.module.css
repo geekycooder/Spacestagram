@@ -1,0 +1,52 @@
+.central {
+  height: 30px;
+  width: 30px;
+  background-color: #f90;
+  background: radial-gradient(circle, #f60, #fc0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: sun-shadow 1.5s ease infinite;
+}
+
+@keyframes sun-shadow {
+  0% {
+    box-shadow: 0px 0px 10px #f90;
+  }
+  50% {
+    box-shadow: 0px 0px 20px #f90;
+  }
+  100% {
+    box-shadow: 0px 0px 10px #f90;
+  }
+}
+
+.orbit {
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+  animation: spin 2.4s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.orbitPlanet {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 8px;
+  left: 8px;
+}
